@@ -1,0 +1,44 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.TreeSet;
+
+public class Wardrobe {
+    private TreeSet<Clothing> allClothes;
+
+    public Wardrobe() {
+        allClothes = new TreeSet<>();
+    }
+
+    public boolean addClothing(Clothing c){
+        if (c != null){
+            allClothes.add(c);
+            return true;
+        }
+        return false;
+    }
+
+    public String getAllClothes(){
+        String all = "";
+        for (Clothing c:allClothes){
+            all += c.toString() + "\n" + "\n";
+        }
+        return all;
+    }
+
+    public boolean getClothes() {
+        try (BufferedReader b = new BufferedReader(new FileReader("Clothes.txt"))) {
+            String line;
+            while ((line = b.readLine()) != null) {
+                String[] lines = line.split("/");
+                Clothing clothing = new Clothing(
+                        lines[0], Integer.valueOf(lines[1]), CType.valueOf(lines[2]),CCategory.valueOf(lines[3]),CCategory.valueOf(lines[4])
+                );
+                allClothes.add(clothing);
+            }
+            return true;
+        } catch (IOException ex) {
+            return false;
+        }
+    }
+}
