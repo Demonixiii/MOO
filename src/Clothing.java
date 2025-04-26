@@ -1,17 +1,18 @@
 public class Clothing implements Comparable<Clothing> {
     private String name;
     private int rarity;
-    private CType type;
-    private CCategory category1;
-    private CCategory category2;
+    private Type type;
+    private Category category1;
+    private Category category2;
+    private String origin;
 
-
-    public Clothing(String name, int rarity, CType type, CCategory category1, CCategory category2) {
+    public Clothing(String name, int rarity, Type type, Category category1, Category category2, String origin) {
         this.name = name;
         setRarity(rarity);
         this.type = type;
         this.category1 = category1;
         this.category2 = category2;
+        this.origin = origin;
     }
 
     public void setRarity(int rarity) {
@@ -22,6 +23,14 @@ public class Clothing implements Comparable<Clothing> {
         }else {
             this.rarity = rarity;
         }
+    }
+
+    public Category getCategory1() {
+        return category1;
+    }
+
+    public Category getCategory2() {
+        return category2;
     }
 
     @Override

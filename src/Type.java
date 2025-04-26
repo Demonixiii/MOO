@@ -1,3 +1,3 @@
-public enum CType {
+public enum Type {
     HAIR,TOP,BOTTOM,DRESS,SHOES,ACCESSORY
 }

@@ -1,1 +1,5 @@
-Stage1/COOL/ELEGANT
+Stage1/COOL/ELEGANT/null/Stage2
+Stage2/MATURE/ELEGANT/Stage1/Stage3
+Satge3/CUTE/SIMPLE/Satge2/Stage4
+Stage4/SIMPLE/WARM/Stage3/Stage5
+Stage5/CUTE/ELEGANT/Stage4/null
