@@ -25,6 +25,10 @@ public class Clothing implements Comparable<Clothing> {
         }
     }
 
+    public String getOrigin() {
+        return origin;
+    }
+
     public Category getCategory1() {
         return category1;
     }
@@ -39,7 +43,7 @@ public class Clothing implements Comparable<Clothing> {
                 "\n" + rarity +
                 "\n" + type +
                 "\n" + category1 +
-                ", " + category2;
+                ", " + category2 + "\n";
     }
 
     @Override

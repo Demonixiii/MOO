@@ -10,12 +10,8 @@ public class Wardrobe {
         allClothes = new TreeSet<>();
     }
 
-    public boolean addClothing(Clothing c){
-        if (c != null){
-            allClothes.add(c);
-            return true;
-        }
-        return false;
+    public TreeSet<Clothing> getList(){
+        return allClothes;
     }
 
     public String getAllClothes(){

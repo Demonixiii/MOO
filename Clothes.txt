@@ -1,5 +1,5 @@
-Sandy Waves/3/HAIR/SIMPLE/COOL/Bought
-Butterfly Bikini Top/2/TOP/ELEGANT/COOL/Bought
-Butterfly Bikini Bottom/5/BOTTOM/ELEGANT/COOL/Bought
-Blue Sandals/1/SHOES/SIMPLE/ELEGANT/Bought
+Sandy Waves/3/HAIR/SIMPLE/COOL/Store
+Butterfly Bikini Top/2/TOP/ELEGANT/COOL/Store
+Butterfly Bikini Bottom/5/BOTTOM/ELEGANT/COOL/Store
+Blue Sandals/1/SHOES/SIMPLE/ELEGANT/Store
 Sapphire Ring/8/ACCESSORY/ELEGANT/MATURE/Stage1
